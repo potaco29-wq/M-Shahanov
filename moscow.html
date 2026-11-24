@@ -1,158 +1,139 @@
 <!DOCTYPE html>
 <html lang="kk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мәскеу — Мұхтар Шаханов</title>
 
-<title>Мәскеу — Мұхтар Шаханов</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-<style>
-* {
-    box-sizing: border-box;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef3f1;
+            color: #222;
+        }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #eef3f1;
-    color: #222;
-}
+        header {
+            background: #006b54;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
 
-header {
-    background: #006b54;
-    color: white;
-    text-align: center;
-    padding: 30px 15px;
-}
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 32px;
-}
+        header p {
+            margin: 10px 0 0;
+        }
 
-header p {
-    margin: 10px 0 0;
-}
+        .content {
+            width: 90%;
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
 
-.content {
-    width: 90%;
-    max-width: 950px;
-    margin: 30px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-}
+        .city-video {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 0;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
 
-.city-image {
-    width: 100%;
-    max-height: 450px;
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
-    margin: 20px 0;
-}
+        .info {
+            background: #e5f3ef;
+            border-left: 5px solid #006b54;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            line-height: 1.7;
+        }
 
-h2 {
-    color: #006b54;
-}
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
 
-p {
-    font-size: 18px;
-    line-height: 1.7;
-}
+        .back {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 22px;
+            background: #006b54;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
 
-.info {
-    background: #e5f3ef;
-    border-left: 5px solid #006b54;
-    padding: 15px 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-}
+        .back:hover {
+            background: #004d40;
+        }
 
-.back {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 13px 22px;
-    background: #006b54;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
+        @media (max-width: 700px) {
+            .content {
+                width: 94%;
+                padding: 20px;
+            }
 
-.back:hover {
-    background: #004d40;
-}.media-row {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-}
-
-.media-row .city-image,
-.city-video {
-    width: calc(50% - 10px);
-    max-height: 450px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-@media (max-width: 700px) {
-    .media-row {
-        flex-direction: column;
-    }
-
-    .media-row .city-image,
-    .city-video {
-        width: 100%;
-    }
-    
-</style>
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <h1>Мәскеу</h1>
+        <p>Мұхтар Шахановтың қоғамдық қызметіндегі маңызды қала</p>
+    </header>
 
-<header>
-    <h1>Мәскеу</h1>
-    <p>Мұхтар Шахановтың қоғамдық қызметіндегі маңызды қала</p>
-</header>
-    <div class="media-row">
+    <main class="content">
+        <iframe
+            class="city-video"
+            src="https://www.youtube.com/embed/tx_ogWh0njc"
+            title="Мәскеу туралы видео"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
 
-   
-    <iframe
-        class="city-video"
-        src="https://youtu.be/tx_ogWh0njc?si=fASutoMilrZPRJWU"
-        title="Мәскеу туралы видео"
-        allowfullscreen>
-    </iframe>
-    <div class="info">
-        <strong>1989 жыл — Мәскеу</strong><br>
-        Мұхтар Шаханов КСРО халық депутаттарының съезінде
-        1986 жылғы Желтоқсан оқиғасына байланысты мәселе көтерді.
-    
+        <div class="info">
+            <strong>1989 жыл — Мәскеу</strong><br>
+            Мұхтар Шаханов КСРО халық депутаттарының съезінде
+            1986 жылғы Желтоқсан оқиғасына байланысты мәселе көтерді.
+        </div>
 
-    <p>
-        Мәскеу Мұхтар Шахановтың қоғамдық қызметіндегі
-        маңызды орындардың бірі болды.
-    </p>
+        <p>
+            Мәскеу Мұхтар Шахановтың қоғамдық қызметіндегі
+            маңызды орындардың бірі болды.
+        </p>
 
-    <p>
-        1989 жылы ол Мәскеуде өткен КСРО халық депутаттарының
-        съезінде Желтоқсан оқиғасының шындығын ашық көтерді.
-        Бұл оның қоғам қайраткері ретінде танылуына ықпал еткен
-        маңызды кезеңдердің бірі болды.
-    </p>
+        <p>
+            1989 жылы ол Мәскеуде өткен КСРО халық депутаттарының
+            съезінде Желтоқсан оқиғасының шындығын ашық көтерді.
+            Бұл оның қоғам қайраткері ретінде танылуына ықпал еткен
+            маңызды кезеңдердің бірі болды.
+        </p>
 
-    <p>
-        Сонымен қатар Мәскеуде Мұхтар Шахановтың поэзия кештері
-        де өткен. Оның шығармашылығы Кеңес Одағы кезеңінде
-        кеңінен танылды.
-    </p>
+        <p>
+            Сонымен қатар Мәскеуде Мұхтар Шахановтың поэзия кештері
+            де өткен. Оның шығармашылығы Кеңес Одағы кезеңінде
+            кеңінен танылды.
+        </p>
 
-    <a href="index.html" class="back">
-        ← Картаға қайту
-    </a>
-
-</div>
-
+        <a href="index.html" class="back">← Картаға қайту</a>
+    </main>
 </body>
 </html>
