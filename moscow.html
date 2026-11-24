@@ -82,7 +82,30 @@ p {
 
 .back:hover {
     background: #004d40;
+}.media-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
 }
+
+.media-row .city-image,
+.city-video {
+    width: calc(50% - 10px);
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+@media (max-width: 700px) {
+    .media-row {
+        flex-direction: column;
+    }
+
+    .media-row .city-image,
+    .city-video {
+        width: 100%;
+    }
+    
 </style>
 </head>
 
@@ -92,17 +115,19 @@ p {
     <h1>Мәскеу</h1>
     <p>Мұхтар Шахановтың қоғамдық қызметіндегі маңызды қала</p>
 </header>
+    <div class="media-row">
+         <h2>Мәскеу қаласы</h2>
 
-<div class="content">
-
-    <h2>Мәскеу қаласы</h2>
-
-    <img 
+    <img
         src="https://cdn-storage-media.tass.ru/resize/1312x868/tass_media/2026/04/19/T/1776624132436474_TfO5HY8n.jpg"
         alt="Мұхтар Шаханов сөз сөйлеп тұр"
         class="city-image"
-         style="width: 500px; height: auto;>
+    >
 
+    <video class="city-video" controls>
+        <source src="https://youtu.be/tx_ogWh0njc?si=fASutoMilrZPRJWU" type="video/mp4">
+        Браузеріңіз видеоны ойната алмайды.
+    </video>
 
     <div class="info">
         <strong>1989 жыл — Мәскеу</strong><br>
